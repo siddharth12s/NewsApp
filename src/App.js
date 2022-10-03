@@ -17,7 +17,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Router>
+        {/* <Router> */}
           <Navbar />
           <LoadingBar
             height={4}
@@ -119,7 +119,7 @@ export default class App extends Component {
               }
             />
           </Routes>
-        </Router>
+        {/* </Router> */}
       </div>
     );
   }
