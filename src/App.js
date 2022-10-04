@@ -103,7 +103,7 @@ export default class App extends Component {
           />
           <Route
             exact
-            path="/"
+            path="/NewsApp"
             element={
               <News
                 setProgress={this.setProgress}
