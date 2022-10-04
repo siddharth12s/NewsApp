@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import React, { Component } from "react";
 import News from "./components/News";
@@ -17,7 +17,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        {/* <Router> */}
+        <Router>
         <Navbar />
         <LoadingBar height={4} color="#ffd700" progress={this.state.progress} />
         {/* <News setProgress ={this.setProgress}   key="sports" pageSize={this.pageSize} country="in" category="sports" /> */}
@@ -115,7 +115,7 @@ export default class App extends Component {
             }
           />
         </Routes>
-        {/* </Router> */}
+        </Router>
       </div>
     );
   }
